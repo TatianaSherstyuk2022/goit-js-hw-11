@@ -8,14 +8,14 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-      <button type="submit">Search</button>
+    <form class="js-search-form search-form" id="search-form">
+      <input type="text" name="searchQuery" class="search-form__input" autocomplete="off" placeholder="Search images..." />
+      <button type="submit" class="search-form__button">Search</button>
     </form>
-    <div class="gallery">
-      <!-- Картки зображень -->
+    <div class="container">
+      <div class="js-gallery gallery"></div>
+      <button type="button" class="load-more is-hidden">Load more</button>
     </div>
-    <button type="button" class="load-more">Load more</button>
-    <!-- <include src="./partials/example.html"></include> -->
+  
   </body>
 </html>
